@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awosame -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- External Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Profile</title>
+  </head>
+  <body>
+    
+    <!-- NavBar star -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">Blogen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./post.html" class="nav-link">Posts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./catagory.html" class="nav-link">Catagory</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./user.html" class="nav-link">Users</a>
+                    </li>
+                       
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="fas fa-user"></i>
+                            Welcome Brad
+                          </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./profile.html">
+                                   <i class="fas fa-user-circle"></i>
+                                    Profile</a></li>
+                                <li><a class="dropdown-item" href="./setting.html">
+                                    <i class="fas fa-cog"></i>
+                                    Settings</a></li>
+                            </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">
+                            <i class="fas fa-user-times"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Header -->
+
+    <header class="bg-primary py-3">
+        <div class="container">
+            <h1 class="text-white">
+                <i class="fas fa-user-circle"></i>
+                Profile</h1>
+
+        </div>
+    </header>
+    <!-- Headr End -->
+    <!-- Add Section -->
+    <section class="add-section bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-grid mb-3">
+                    <a class="btn btn-light" href="./index.html">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to DashBoard
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 d-grid mb-3">
+                    <button class="btn btn-success">
+                        <i class="fas fa-lock"></i>
+                        Change Password
+                    </button>
+                </div>
+
+                <div class="col-lg-3 d-grid mb-3">
+                    <button class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                        Change Password
+                    </button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Profile Start -->
+     <section class="Profile py-4">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-9"> 
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h3>Edit Profile</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="form-group mb3">
+                                    <label class="lead text-muted"for="title">Name</label>
+                                    <input class="form-control mb-2"type="text" placeholder="Raheel Ur Rehman">
+                                </div>
+    
+                                <div class="form-group mb3">
+                                    <label class="lead text-muted"for="catagory">Email</label>
+                                    <input class="form-control" type="Email" placeholder="test@test">
+                                    
+                                </div>    
+    
+                                 
+                                  <div class="form-group">
+                                      <label for="body">Body</label>
+                                      <textarea name="editor1"></textarea>
+                                  </div>
+    
+                                  
+                            </form>
+
+                        </div>
+
+                        
+                    </div>    
+                                                         
+                </div>
+                                
+                <div class="col-lg-3">
+                     
+                        <div class="avatar mb-3">
+                             <h3>Your Avatar</h3>
+                             <img src="./img/img_avatar.png" class="img-fluid">
+                           
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button class="btn btn-primary">Edit Image</button>
+                        </div>
+                        
+                        <div class="d-grid mb-3">
+                            <button class="btn btn-danger">Delete Image</button>
+                        </div>  
+                </div>
+             </div>
+         </div>
+     </section>
+     <!-- Profile End -->
+
+     <!-- Footer Start -->
+     <footer class="footer py-4 bg-dark text-center text-white">
+         Copy &copy; Rights 2021
+
+     </footer>
+
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>

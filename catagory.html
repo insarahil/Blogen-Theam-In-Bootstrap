@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awosame -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- External Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Catagory</title>
+  </head>
+  <body>
+    
+    <!-- NavBar star -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+          <a href="./index.html" class="navbar-brand">Blogen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="menu" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="./index.html" class="nav-link ">Dashboard</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="./post.html" class="nav-link">Posts</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="./catagory.html" class="nav-link active">Catagory</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="./user.html" class="nav-link">Users</a>
+                  </li>
+                     
+              </ul>
+
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         <i class="fas fa-user"></i>
+                          Welcome Brad
+                        </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./profile.html">
+                                 <i class="fas fa-user-circle"></i>
+                                  Profile</a></li>
+                              <li><a class="dropdown-item" href="./setting.html">
+                                  <i class="fas fa-cog"></i>
+                                  Settings</a></li>
+                          </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="./login.html" class="nav-link">
+                          <i class="fas fa-user-times"></i>
+                          Logout
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+  </nav>
+  <!-- NavBar End -->
+
+  <!-- Header -->
+
+  <header class="bg-success py-3">
+      <div class="container">
+          <h1 class="text-white">
+              <i class="fas fa-folder"></i>
+            Catagory
+          </h1>
+
+      </div>
+  </header>
+  <!-- Headr End -->
+  <!-- search Section -->
+  <section class="search-section bg-light py-3">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+              <div class="form-group mb-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inputGroupFile02">
+                    <button class="btn btn-success">Search</button>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- posts Start -->
+   <section class="posts py-4">
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                   <table class="table table-striped">
+                      <thead>
+                          <tr class="table-light">
+                              <th>Catagory</th>
+                              <th></th><th></th><th></th>
+                          </tr>
+                          <tr class="table-dark">
+                                  <th>#</th>
+                                  <th>Catagory</th>
+                                  <th>Date</th>
+                                  <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Web Developer</td>
+                              <td>26 August, 2021</td>
+                              <td>
+                              <button class="btn btn-secondary">
+                                  <i class="fas fa-angle-double-right"></i>
+                                  Detials
+                              </button>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td>2</td>
+                              <td>Web Designer</td>
+                              <td>26 August, 2021</td>
+                              <td>
+                              <button class="btn btn-secondary">
+                                  <i class="fas fa-angle-double-right"></i>
+                                  Detials
+                              </button>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td>3</td>
+                              <td>UI/UX</td>
+                              <td>26 August, 2021</td>
+                              <td>
+                              <button class="btn btn-secondary">
+                                  <i class="fas fa-angle-double-right"></i>
+                                  Detials
+                              </button>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td>4</td>
+                              
+                              <td>Web Designer</td>
+                              <td>26 August, 2021</td>
+                              <td>
+                              <button class="btn btn-secondary">
+                                  <i class="fas fa-angle-double-right"></i>
+                                  Detials
+                              </button>
+                              </td>
+                          </tr>
+
+                      </tbody>
+
+                   </table>
+
+                   
+
+               </div>
+           </div>
+           <div class="pagination">
+            <li class="page-item">
+              <a href="#" class="page-link">Perivious</a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">1</a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">2</a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">3</a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">4</a>
+            </li>
+
+            <li class="page-item">
+              <a href="#" class="page-link">Next</a>
+            </li>
+          </div>
+       </div>
+       
+   </section>
+   <!-- posts End -->
+    <!-- Footer Start -->
+    <footer class="footer py-4 bg-dark text-center text-white">
+        Copy &copy; Rights 2021
+
+    </footer>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
